@@ -26,7 +26,7 @@ data['maps'] = []
 
 l = []
 for file in os.listdir("maps"):
-    if file.endswith(".bsp"):
+    if file.endswith((".bsp", ".BSP")):
         filename = file.split('.')
         name = filename[0]
         data['maps'].append({
